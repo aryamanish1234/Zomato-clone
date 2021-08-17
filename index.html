@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chomp Champ</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+ 
+  <script src="https://kit.fontawesome.com/498e63c67f.js" crossorigin="anonymous"></script>
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+
+
+</head>
+<body>
+  <div class="container-fluid container-Whole">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./index.html">
+
+        <span class="logoName">Zomato Clone</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item pl-3">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item pl-3">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item dropdown pl-3">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Delivery Network
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" style="cursor: none;">
+                <span class="location">
+                  <img src="https://img.icons8.com/cotton/64/000000/worldwide-location--v2.png" width="30" height="30">
+                </span>Locations we Deliver </a>
+              <a class="dropdown-item" href="#">Pune</a>
+              <div class="dropdown-divider">
+              </div>
+              <a class="dropdown-item" href="#">Delhi</a>
+              <div class="dropdown-divider">
+              </div>
+              <a class="dropdown-item" href="#">Bengaluru</a>
+              <div class="dropdown-divider">
+              </div>
+              <a class="dropdown-item" href="#">Mumbai</a>
+              <div class="dropdown-divider">
+              </div>
+              <a class="dropdown-item" href="#">Hyderabad</a>
+              <div class="dropdown-divider">
+              </div>
+              <a class="dropdown-item" href="#">Chennai</a>
+              <a class="dropdown-item" href="#">
+                <small class="smallInfo-nav">*We soon gonna reach to more cities!!</small>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog cascading-modal" role="document">
+              
+              <div class="modal-content">
+                <div class="modal-c-tabs">
+                  <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                        Login
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" id="registerMeHere" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i>
+                        Register
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+                      <div class="modal-body mb-1">
+                        <div class="md-form form-sm mb-5">
+                          <i class="fas fa-envelope prefix"></i>
+                          <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                          <label data-error="wrong" data-success="right" for="modalLRInput10" class="getLabels">Your email</label>
+                        </div>
+                        <div class="md-form form-sm mb-4">
+                          <i class="fas fa-lock prefix"></i>
+                          <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                          <label data-error="wrong" data-success="right" for="modalLRInput11" class="getLabels">Your password</label>
+                        </div>
+                        <div class="text-center mt-2">
+                          <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="options text-center text-md-right mt-1">
+                          <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                          <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                        </div>
+                        <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="panel8" role="tabpanel">
+                      <div class="modal-body">
+                        <div class="md-form form-sm mb-5">
+                          <i class="fas fa-envelope prefix"></i>
+                          <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                          <label data-error="wrong" data-success="right" for="modalLRInput12" class="getLabels">Your email</label>
+                        </div>
+                        <div class="md-form form-sm mb-5">
+                          <i class="fas fa-lock prefix"></i>
+                          <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                          <label data-error="wrong" data-success="right" for="modalLRInput13" class="getLabels">Your password</label>
+                        </div>
+
+                        <div class="md-form form-sm mb-4">
+                          <i class="fas fa-lock prefix"></i>
+                          <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                          <label data-error="wrong" data-success="right" for="modalLRInput14" class="getLabels">Repeat password</label>
+                        </div>
+
+                        <div class="text-center form-sm mt-2">
+                          <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="options text-right">
+                          <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                        </div>
+                        <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a>
+          </div>
+        </form>
+      </div>
+    </nav>
+    
+    <div class="banner">
+      <h1 class="banner-heading">
+        We deliver Fresh n Hot
+      </h1>
+      <h3 class="banner-subHeading">
+        get tasty food here only!!
+      </h3>
+    </div>
+    
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 m-auto">
+          <h3 class="text-center" style="color: white;">
+            Search Restaurants
+          </h3>
+          <div class="form-group">
+            <div class="input-group input-group-lg mt-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">
+                  <i class="fas fa-search text-grey"aria-hidden="true"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control my-0 py-1 red-border mySearchBox" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Restaurant Partners and Food we Deliver">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="populatedArea">
+      <ul class="suggestions">
+
+      </ul>
+    </div>
+    
+    <div class="main-photoSection">
+      <div class="card-deck">
+        <div class="w-100 d-none d-xl-block">
+        <!-- wrap every 5 on xl-->
+        </div>
+        <div class="card mb-4">
+          <img class="card-img-top img-fluid" src="./ipl.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title" id="cardsTitle">Enjoy IPL Season </h4>
+            <p class="card-text">
+              Predict the winner and get some awesome discounts
+            </p>
+            <ul>
+              <h4 id="cardsTitle">
+                Upcoming Games
+              </h4>
+              <br>
+              <li class="li-matches" style="margin-top: 20px;">
+                Mumbai Indians Vs Delhi Capitals
+              </li>
+              <li class="li-matches">
+                Sunrisers Hyderabad vs Royal Challengers-Bengaluru
+              </li>
+              <li class="li-matches">
+                Kolkata Knight Riders vs Rajasthan Royals
+              </li>
+              <li class="li-matches">
+                Chennai-SuperKings vs Kings XI Punjab
+              </li>
+            </ul>
+            <p class="card-text">
+              <small class="text-muted">
+                  *Terms and Conditions Apply
+                  <br>
+                  Live Screening till 10pm only!!
+              <br>
+                  Offer valid till 12th November 2020
+              </small>
+            </p>
+          </div>
+        </div>
+
+      <div class="w-100 d-none d-sm-block d-md-none">
+      </div>
+      <div class="w-100 d-none d-md-block d-lg-none">
+
+      </div>
+      <div class="card mb-4">
+          <img class="card-img-top img-fluid" src="./brewery.jpg" alt="Card image cap">
+          <div class="card-body">
+              <h4 class="card-title" id = 'cardsTitle-stretch'>Enjoy Night Life</h4>
+              <p class="card-text">
+                <span class="Alco">Alcohol</span> wont solve your problems Neither do 
+                <span class="opposite">water</span> or
+                <span class="opposite1">milk</span>
+                would solve.
+                <br>
+                We get you all beverages available at an exclusive offer
+              </p>
+              <p class="card-text"><small class="text-muted">
+                *Age Limit to avail is 18 years and above.
+                <br>
+                Offer valid till 12th November 2020
+              </small></p>
+          </div>
+      </div>
+      <div class="card mb-4">
+          <img class="card-img-top img-fluid" src="./HealthyFood.jpg" alt="Card image cap">
+          <div class="card-body">
+              <h4 class="card-title" id = 'cardsTitle'>Eat Healthy Stay Healthy</h4>
+              <p class="card-text">
+                Farm-fresh foodstuffs and highly nutrtious food available.
+                <br>
+                Dont focus on how much you eat, Focus on the food you Eat
+                <br>
+                Now Serving Healthy Packed Foods, We are voted as top Healthy Food Delivery App
+                <br>
+                <h4 id="cardsTitle-stretch" style="margin-top: 40px;">
+                  Food is an important part of a balanced diet.
+                </h4>
+                <h5 id="cardsTitle">
+                  Get some awesome offers
+                </h5>
+              </p>
+
+              <p class="card-text"><small class="text-muted">
+                *We deliver and serve only Hygienic Foods
+                <br>
+                *We use refined oil only for preparation
+              </small></p>
+          </div>
+      </div>
+
+      <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+      <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+      <div class="card mb-4">
+          <img class="card-img-top img-fluid" src="./Pubs.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title" id="cardsTitle-stretch">
+                Pubs and Disco
+            </h4>
+            <p class="card-text">
+              We are now Open and at full operation, we would like you to take a visit here!!
+              <br>
+              12th November- Dj Major Lazor will perform Live
+            </p>
+            <p class="card-text">
+              <small class="text-muted">
+              *for passes contact at below or mail us
+              <br>
+              Limited seats available DO book fast!</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="getApp">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="https://b.zmtcdn.com/data/pro/5722d9e687511d79616bcab92470734e1596187147.png" class = "img-fluid"alt="">
+          </div>
+          <div class="col-md-6 text-center m-auto">
+            <div class="row">
+              <h1 class="mb-4" style="line-height: 1;">
+                Get the
+                <span class="spanElementstyle">
+                  Chomp Champ 
+                </span> 
+                App 
+              </h1>
+              <div class="col-sm-12 text-center">
+                <p class="text-center">
+                  Download us on
+                   <span class="spanGoogle">
+                    Google Playstore
+                   </span>                     for free
+                </p>
+                <button class="btn btn-success btn-md mb-4">
+                  <i class="fab fa-google-play fa-2x">
+                    Play Store
+                  </i>
+                </button>
+              </div>
+              <div class="col-sm-12 text-center">
+                <p class="text-center">
+                  Download us on 
+                  <span class="spanGoogle">
+                     Apple Store
+                  </span>
+                   for free
+                </p>
+                <button class="btn btn-primary btn-md mb-5">
+                <i class="fab fa-apple fa-2x">
+                    Apple Store
+                </i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="getApp">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" style="border: 2px solid red;  background-color: white;">
+              <div class="col-md-10" id="mobileImage">
+                <img src="https://b.zmtcdn.com/data/pro/5722d9e687511d79616bcab92470734e1596187147.png" alt="">
+                
+                <button type="button" class="btn btn-success">
+                  Get on PlayStore
+                </button>
+                <button type="button" class="btn btn-info">
+                  Get on Apple
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="row tinted-image" style="margin-bottom: 20px; background-color: white;">
+      <div class="col-sm-12 text-center">
+        <div class="get mt-5">
+          <button id="btnSearch" class="btn btn-success btn-md center-block mr-3 "  >Get On PlayStore</button>
+           <button id="btnClear" class="btn btn-primary btn-md center-block " OnClick="btnClear_Click" >Get on App Store</button>
+        </div>     
+       </div>
+      </div>
+    </div> -->
+  
+<footer class="page-footer">
+    <div class="container-fluid" style="width: 100%">
+      <div class="row" >
+        <div class="col-sm-12 col-md-3 careerLink" style="margin-top: 8px;">
+           <h3 class="text-center">
+            <a href="./about.html" class="footer_aboutus">
+              About Us
+            </a> 
+           </h3>
+           <p class="text-center">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum possi
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-3 careerLink" style="margin-top: 8px">
+          <h3 class="footer_career">
+            <span>
+              Career
+            </span>
+          </h3>
+          <p class="footer_careersPara">
+            Make Your Start to Bright Future
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-md-3 careerLink">
+          <h3 class="footer-contact text-center footer_career" style="color: red;">
+            <span>
+              Get in Touch
+            </span>
+          </h3>
+          <p class="text-center">
+            <i class="fas fa-home  iconsIntouch fa-2x"></i>
+            <span>
+              Delhi, House-20
+            </span>
+          </p>
+
+          <p class="text-center">
+            <i class="fas fa-phone iconsIntouch  fa-2x">
+            </i>
+            <span>
+              222-333-4444
+            </span>
+          </p>
+        
+        </div>
+        <div class="col-sm-12 col-md-3 careerLink">
+          <h3 class="footer-contact text-center footer_career" style="color: red;">
+            <span>
+              Follow Us On!
+            </span>
+          </h3>
+          <div class="footer_icon">
+            <div class="fb-ic hover-social">
+              <i class="fab fa-facebook-f fa-lg white-text mr-2 fa-2x"> </i>
+            </div>
+            
+            <div class="tw-ic hover-social">
+              <i class="fab fa-twitter fa-lg white-text mr-2 fa-2x"> </i>
+            </div>
+            
+            <div class="gplus-ic hover-social">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-2 fa-2x"> </i>
+            </div>
+            
+            <div class="li-ic hover-social">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-2 fa-2x"> </i>
+            </div>
+            
+            <div class="ins-ic hover-social">
+              <i class="fab fa-instagram fa-lg white-text mr-2 fa-2x"> </i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="footer-copyright text-center">© 2020 Copyright:
+    <a href="./index.html">Zomato-Clone</a>
+    <p class="footerPara">
+      Made in India <i class="fas fa-heart"></i>
+    </p>
+  </div>
+</footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
